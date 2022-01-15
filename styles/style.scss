@@ -1,2 +1,13 @@
 @import "partials/variables";
 @import "partials/mixins";
+
+/*Fonts*/
+
+@font-face {
+  font-family: "Emblafont-Regular";
+  src: url(/fonts/Emblafont-Regular.otf);
+}
+@font-face {
+  font-family: "Scribbly-Emblafant";
+  src: url(/fonts/ScribblyEmblafant-Regular.otf);
+}
