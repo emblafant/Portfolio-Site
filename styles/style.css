@@ -8,4 +8,127 @@
   font-family: "Scribbly-Emblafant";
   src: url(/fonts/ScribblyEmblafant-Regular.otf);
 }
+
+/*Text*/
+/*body*/
+body {
+  margin: 0;
+}
+
+/*header*/
+header {
+  background-color: #f2aea3;
+  padding: 20px;
+}
+
+.header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+}
+
+.header-content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style-type: none;
+  color: #193f6a;
+}
+
+.header-content ul a {
+  font-family: "Emblafont-regular", calibri, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  text-decoration: none;
+  margin-left: 20px;
+  color: #193f6a;
+}
+
+@media (min-width: 1025px) {
+  .header-content ul a {
+    font-size: 50px;
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .header-content {
+    height: 80px;
+  }
+}
+
+.logo {
+  height: 50px;
+}
+
+@media (min-width: 1025px) {
+  .logo {
+    height: 70px;
+  }
+}
+
+.header-nav {
+  display: none;
+}
+
+@media (min-width: 601px) {
+  .header-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+/*hamburger menu*/
+@media (min-width: 601px) {
+  .hamburger-dropdown {
+    display: none;
+  }
+}
+
+.hamburger-icon {
+  height: 50px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f8ebe1;
+  width: 100vw;
+  right: 0;
+  top: 90px;
+  padding: 20px;
+}
+
+.dropdown-content a {
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  color: #193f6a;
+  font-family: "Emblafont-Regular", calibri, sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.show {
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */
